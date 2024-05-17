@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "spellbound",
+	"version": "${version}",
+	"name": "Spellbound",
+	"description": "Mod for the private spellbound smp!",
+	"authors": [
+		"rats159"
+	],
+	"contact": {
+		"homepage": "https://rats159.dev/",
+		"sources": "https://github.com/rats159/spellbound"
+	},
+	"license": "MIT",
+	"icon": "assets/spellbound/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"dev.rats159.spellbound.Spellbound"
+		],
+		"fabric-datagen": [
+			"dev.rats159.spellbound.SpellboundDataGenerator"
+		]
+	},
+	"mixins": [
+		"spellbound.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.6",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
